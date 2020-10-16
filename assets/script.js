@@ -6,8 +6,8 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   debugger;
   var passwordText = {
-    value: [""],
-    array: [""],
+    value: [],
+    array: [],
   }
 
   function randomize() {
@@ -43,13 +43,12 @@ function writePassword() {
        passwordText.array += symbol;
        console.log(passwordText.array);
      }
-     for (var i = 0; i < lengthPrompt - 1; ++i) {
-      var i = 0;
+     for (var i = 0; i < lengthPrompt; ++i) {
+      //var i = 0;
       randomize(passwordText.array[i]);
       console.log(passwordText.value);
-      //return passwordText.value;
      }
-     
+     return passwordText.value
   }
 
   var passwordText = document.querySelector("#password");
