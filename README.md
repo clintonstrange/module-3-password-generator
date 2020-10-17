@@ -6,4 +6,4 @@
 * Then the user is asked to selcet their critia to us - lowercase letter, uppercase letters, numbers and symbols.
 * Then the password is generated in the box based on the choices deisgnated from the user.
 
-<iframe src="https://drive.google.com/file/d/1WuLQtE5MeC5fRvnDg2j5O1TziXt_Bq8t/preview" width="640" height="480"></iframe>
+<img src =
