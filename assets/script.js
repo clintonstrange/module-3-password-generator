@@ -4,16 +4,11 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  debugger;
+  //debugger;
   var passwordText = {
     value: [],
     array: [],
   }
-
-  function randomize() {
-    passwordText.value += passwordText.array[(Math.floor(Math.random() * passwordText.array.length - 1))];
-    return passwordText.value
-    }
 
   var password = generatePassword();
     
@@ -44,9 +39,8 @@ function writePassword() {
        console.log(passwordText.array);
      }
      for (var i = 0; i < lengthPrompt; ++i) {
-      //var i = 0;
-      randomize(passwordText.array[i]);
-      console.log(passwordText.value);
+      var letter = passwordText.array[(Math.floor(Math.random() * passwordText.array.length))];
+          passwordText.value += letter
      }
      return passwordText.value
   }
