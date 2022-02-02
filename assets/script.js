@@ -89,7 +89,7 @@ function pwOptions() {
     alert("Desired character length must be between 8 and 128 characters.");
     return;
   }
-  console.log(length);
+  // console.log(length);
   if (isNaN(length) === true) {
     alert("Desired character length must be a number.");
     return;
@@ -109,7 +109,7 @@ function pwOptions() {
     numberConfirm !== true &&
     symbolConfirm !== true
   ) {
-    alert("At least character type is required.");
+    alert("At least 1 character type is required.");
     return;
   }
   // object shorthand notation
